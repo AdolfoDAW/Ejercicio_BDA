@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/EmpleaFP_DB">
+    <Resource 
+        type="javax.sql.DataSource"
+        auth="Container"
+        name="jdbc/estadisticas"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/estadisticas"
+        username="root" 
+        password="root"
+         
+        maxTotal="50"     
+        maxIdle="30" 
+        minIdle="15"
+        initialSize="10"
+        maxWaitMills="1000"                       
+        validationQuery="SELECT 1 FROM dual"/>
+</Context>
